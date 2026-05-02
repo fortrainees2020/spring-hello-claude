@@ -5,7 +5,7 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="hello" class="com.example.hello.Hello">
-        <property name="message" value="Welcome to Spring Core!" />
+        <property name="message" value="Welcome to Spring Core! using CLAUDE" />
     </bean>
 
 </beans>
