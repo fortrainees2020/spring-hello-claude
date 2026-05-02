@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29"/>
+      <stop offset="50%" style="stop-color:#302b63"/>
+      <stop offset="100%" style="stop-color:#24243e"/>
+    </linearGradient>
+    <linearGradient id="appGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7971e"/>
+      <stop offset="100%" style="stop-color:#ffd200"/>
+    </linearGradient>
+    <linearGradient id="containerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e"/>
+      <stop offset="100%" style="stop-color:#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="xmlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4776e6"/>
+      <stop offset="100%" style="stop-color:#8e54e9"/>
+    </linearGradient>
+    <linearGradient id="beanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f953c6"/>
+      <stop offset="100%" style="stop-color:#b91d73"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7971e"/>
+      <stop offset="100%" style="stop-color:#ff4e50"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6a11cb"/>
+      <stop offset="100%" style="stop-color:#2575fc"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Arrow marker -->
+    <marker id="arrowWhite" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" opacity="0.8"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#38ef7d"/>
+    </marker>
+    <marker id="arrowYellow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffd200"/>
+    </marker>
+    <marker id="arrowPink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f953c6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="680" fill="url(#bgGrad)" rx="0"/>
+
+  <!-- Decorative circles -->
+  <circle cx="900" cy="80" r="120" fill="#6a11cb" opacity="0.15"/>
+  <circle cx="100" cy="580" r="100" fill="#2575fc" opacity="0.12"/>
+  <circle cx="500" cy="340" r="300" fill="#11998e" opacity="0.04"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1000" height="70" fill="url(#headerGrad)" opacity="0.9"/>
+  <text x="500" y="28" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" filter="url(#glow)">Spring Core Hello World</text>
+  <text x="500" y="52" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#c8d6ff" opacity="0.9">XML-Based Dependency Injection · Spring 6.2.6 · Java 17</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- LAYER 1: App.java -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="60" y="110" width="220" height="145" rx="16" fill="url(#appGrad)" opacity="0.15" filter="url(#dropshadow)"/>
+  <rect x="60" y="110" width="220" height="145" rx="16" fill="none" stroke="url(#appGrad)" stroke-width="2.5"/>
+  <!-- Icon -->
+  <rect x="80" y="125" width="36" height="36" rx="8" fill="url(#appGrad)" filter="url(#glow)"/>
+  <text x="98" y="150" text-anchor="middle" font-family="Arial" font-size="20" fill="#0f0c29" font-weight="bold">▶</text>
+  <!-- Title -->
+  <text x="125" y="142" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffd200" filter="url(#glow)">App.java</text>
+  <text x="125" y="158" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#ffe680">Entry Point</text>
+  <!-- Code lines -->
+  <rect x="80" y="172" width="180" height="1" fill="#ffd200" opacity="0.3"/>
+  <text x="88" y="188" font-family="'Courier New', monospace" font-size="10" fill="#fff9c4">main(String[] args)</text>
+  <text x="88" y="204" font-family="'Courier New', monospace" font-size="10" fill="#ffd200">new ClassPathXmlApplicationContext</text>
+  <text x="88" y="219" font-family="'Courier New', monospace" font-size="10" fill="#ffe680">context.getBean("hello")</text>
+  <text x="88" y="235" font-family="'Courier New', monospace" font-size="10" fill="#fff">hello.greet()</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- LAYER 2: applicationContext.xml -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="360" y="100" width="280" height="165" rx="16" fill="url(#xmlGrad)" opacity="0.15" filter="url(#dropshadow)"/>
+  <rect x="360" y="100" width="280" height="165" rx="16" fill="none" stroke="url(#xmlGrad)" stroke-width="2.5"/>
+  <!-- Icon -->
+  <rect x="380" y="115" width="36" height="36" rx="8" fill="url(#xmlGrad)" filter="url(#glow)"/>
+  <text x="398" y="139" text-anchor="middle" font-family="Arial" font-size="18" fill="#fff" font-weight="bold">⚙</text>
+  <!-- Title -->
+  <text x="426" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#8e54e9" filter="url(#glow)">applicationContext.xml</text>
+  <text x="426" y="147" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#b39ddb">Spring IoC Configuration</text>
+  <!-- Code block -->
+  <rect x="380" y="160" width="240" height="90" rx="8" fill="#1a1040" opacity="0.7"/>
+  <text x="393" y="177" font-family="'Courier New', monospace" font-size="10" fill="#7c83fd">&lt;beans&gt;</text>
+  <text x="403" y="193" font-family="'Courier New', monospace" font-size="10" fill="#ce93d8">  &lt;bean id=<tspan fill="#a5d6a7">"hello"</tspan></text>
+  <text x="403" y="208" font-family="'Courier New', monospace" font-size="10" fill="#ce93d8">    class=<tspan fill="#a5d6a7">"Hello"</tspan>/&gt;</text>
+  <text x="413" y="223" font-family="'Courier New', monospace" font-size="10" fill="#80cbc4">    &lt;property name=<tspan fill="#ffe082">"message"</tspan></text>
+  <text x="413" y="238" font-family="'Courier New', monospace" font-size="10" fill="#80cbc4">      value=<tspan fill="#ffe082">"Welcome..."</tspan>/&gt;</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- LAYER 3: Spring IoC Container (center, prominent) -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="280" y="310" width="440" height="180" rx="20" fill="url(#containerGrad)" opacity="0.12" filter="url(#softglow)"/>
+  <rect x="280" y="310" width="440" height="180" rx="20" fill="none" stroke="url(#containerGrad)" stroke-width="3"/>
+  <!-- Glow pulse ring -->
+  <rect x="275" y="305" width="450" height="190" rx="23" fill="none" stroke="#38ef7d" stroke-width="1" opacity="0.3"/>
+  <!-- Icon -->
+  <rect x="300" y="325" width="44" height="44" rx="12" fill="url(#containerGrad)" filter="url(#glow)"/>
+  <text x="322" y="354" text-anchor="middle" font-family="Arial" font-size="24" fill="#0f0c29">🌱</text>
+  <!-- Title -->
+  <text x="355" y="342" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="bold" fill="#38ef7d" filter="url(#glow)">Spring IoC Container</text>
+  <text x="355" y="360" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a5f3c8">ClassPathXmlApplicationContext</text>
+
+  <!-- Bean pill inside container -->
+  <rect x="300" y="377" width="400" height="95" rx="12" fill="#0d2b22" opacity="0.8"/>
+  <!-- Bean header -->
+  <rect x="300" y="377" width="400" height="30" rx="12" fill="#11998e" opacity="0.6"/>
+  <rect x="300" y="395" width="400" height="12" rx="0" fill="#11998e" opacity="0.6"/>
+  <text x="500" y="397" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff">Managed Bean: "hello"  →  Hello.class</text>
+
+  <!-- Property row -->
+  <rect x="315" y="415" width="170" height="46" rx="8" fill="#1b3a30" opacity="0.9"/>
+  <text x="400" y="432" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#80cbc4">Property</text>
+  <text x="400" y="450" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#ffe082">message</text>
+  <text x="400" y="462" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#a5d6a7">"Welcome to Spring Core!"</text>
+
+  <!-- Lifecycle row -->
+  <rect x="500" y="415" width="185" height="46" rx="8" fill="#1b3a30" opacity="0.9"/>
+  <text x="592" y="432" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#80cbc4">Lifecycle</text>
+  <text x="592" y="449" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#38ef7d">Singleton  ·  Setter Injection</text>
+  <text x="592" y="462" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#a5f3c8">init → use → destroy</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- LAYER 4: Hello.java Bean -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="680" y="110" width="240" height="165" rx="16" fill="url(#beanGrad)" opacity="0.15" filter="url(#dropshadow)"/>
+  <rect x="680" y="110" width="240" height="165" rx="16" fill="none" stroke="url(#beanGrad)" stroke-width="2.5"/>
+  <!-- Icon -->
+  <rect x="698" y="125" width="36" height="36" rx="8" fill="url(#beanGrad)" filter="url(#glow)"/>
+  <text x="716" y="149" text-anchor="middle" font-family="Arial" font-size="20" fill="#fff">☕</text>
+  <!-- Title -->
+  <text x="744" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#f953c6" filter="url(#glow)">Hello.java</text>
+  <text x="744" y="156" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f8bbd0">Spring Bean / POJO</text>
+  <!-- Members -->
+  <rect x="698" y="170" width="204" height="1" fill="#f953c6" opacity="0.3"/>
+  <text x="706" y="186" font-family="'Courier New', monospace" font-size="10" fill="#f8bbd0">String message</text>
+  <rect x="706" y="192" width="170" height="1" fill="#f953c6" opacity="0.15"/>
+  <text x="706" y="205" font-family="'Courier New', monospace" font-size="10" fill="#f48fb1">getMessage()</text>
+  <text x="706" y="220" font-family="'Courier New', monospace" font-size="10" fill="#f48fb1">setMessage(String)</text>
+  <text x="706" y="235" font-family="'Courier New', monospace" font-size="10" fill="#ff80ab">greet()  ← prints output</text>
+  <text x="706" y="251" font-family="'Courier New', monospace" font-size="9" fill="#f953c6" opacity="0.7">sysout("Hello from Spring: "+msg)</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- OUTPUT Terminal -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="280" y="535" width="440" height="110" rx="16" fill="url(#outputGrad)" opacity="0.12" filter="url(#dropshadow)"/>
+  <rect x="280" y="535" width="440" height="110" rx="16" fill="none" stroke="#ff4e50" stroke-width="2"/>
+  <!-- Terminal dots -->
+  <circle cx="307" cy="555" r="6" fill="#ff5f57"/>
+  <circle cx="325" cy="555" r="6" fill="#ffbd2e"/>
+  <circle cx="343" cy="555" r="6" fill="#28ca41"/>
+  <text x="500" y="556" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#ffccbc">Console Output</text>
+  <rect x="290" y="566" width="420" height="1" fill="#ff4e50" opacity="0.3"/>
+  <rect x="290" y="567" width="420" height="67" rx="8" fill="#1a0a00" opacity="0.8"/>
+  <text x="305" y="586" font-family="'Courier New', monospace" font-size="11" fill="#69f0ae">$  mvn exec:java</text>
+  <text x="305" y="604" font-family="'Courier New', monospace" font-size="12" fill="#ffd200" filter="url(#glow)">Hello from Spring: Welcome to Spring Core!</text>
+  <text x="305" y="622" font-family="'Courier New', monospace" font-size="10" fill="#ff8a65">BUILD SUCCESS</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ARROWS -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <!-- App.java → IoC Container (loads) -->
+  <path d="M 170 255 Q 170 330 290 360" fill="none" stroke="#ffd200" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowYellow)" opacity="0.85"/>
+  <rect x="90" y="278" width="115" height="20" rx="6" fill="#1a1200" opacity="0.7"/>
+  <text x="148" y="292" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#ffd200">1. loads context</text>
+
+  <!-- XML → IoC Container (configures) -->
+  <path d="M 500 265 L 500 310" fill="none" stroke="#8e54e9" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrowWhite)" opacity="0.85"/>
+  <rect x="426" y="278" width="120" height="20" rx="6" fill="#0d0820" opacity="0.7"/>
+  <text x="486" y="292" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#b39ddb">2. configures beans</text>
+
+  <!-- IoC Container → Hello.java (instantiates + injects) -->
+  <path d="M 720 377 Q 790 310 790 275" fill="none" stroke="#f953c6" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrowPink)" opacity="0.85"/>
+  <rect x="738" y="310" width="120" height="32" rx="6" fill="#1a0015" opacity="0.7"/>
+  <text x="798" y="324" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f953c6">3. instantiates</text>
+  <text x="798" y="337" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f48fb1">  &amp; injects props</text>
+
+  <!-- IoC Container → Output (greet) -->
+  <path d="M 500 490 L 500 535" fill="none" stroke="#38ef7d" stroke-width="2.5" marker-end="url(#arrowGreen)" opacity="0.85"/>
+  <rect x="416" y="503" width="126" height="20" rx="6" fill="#001a0d" opacity="0.7"/>
+  <text x="479" y="517" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#38ef7d">4. hello.greet()</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- LEGEND -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="30" y="430" width="200" height="210" rx="14" fill="#0d0d1a" opacity="0.85" stroke="#333366" stroke-width="1.5"/>
+  <text x="130" y="453" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Legend</text>
+  <rect x="48" y="462" width="200" height="1" fill="#333366" opacity="0.5"/>
+
+  <rect x="50" y="474" width="14" height="14" rx="4" fill="url(#appGrad)"/>
+  <text x="72" y="485" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#ffd200">App.java (Entry Point)</text>
+
+  <rect x="50" y="497" width="14" height="14" rx="4" fill="url(#xmlGrad)"/>
+  <text x="72" y="508" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8e54e9">applicationContext.xml</text>
+
+  <rect x="50" y="520" width="14" height="14" rx="4" fill="url(#containerGrad)"/>
+  <text x="72" y="531" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#38ef7d">Spring IoC Container</text>
+
+  <rect x="50" y="543" width="14" height="14" rx="4" fill="url(#beanGrad)"/>
+  <text x="72" y="554" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f953c6">Hello.java (Bean)</text>
+
+  <rect x="50" y="566" width="14" height="14" rx="4" fill="url(#outputGrad)"/>
+  <text x="72" y="577" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#ff7043">Console Output</text>
+
+  <line x1="50" y1="597" x2="70" y2="597" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="78" y="601" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#aaaaaa">Dependency / Flow</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- Tech badges bottom-right -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="760" y="540" width="200" height="100" rx="12" fill="#0d0d1a" opacity="0.85" stroke="#333366" stroke-width="1.5"/>
+  <text x="860" y="562" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Tech Stack</text>
+  <rect x="775" y="570" width="90" height="24" rx="8" fill="#4776e6" opacity="0.8"/>
+  <text x="820" y="586" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#fff" font-weight="bold">Spring 6.2.6</text>
+  <rect x="875" y="570" width="70" height="24" rx="8" fill="#f7971e" opacity="0.8"/>
+  <text x="910" y="586" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#fff" font-weight="bold">Java 17</text>
+  <rect x="775" y="602" width="65" height="24" rx="8" fill="#e53935" opacity="0.8"/>
+  <text x="807" y="618" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#fff" font-weight="bold">Maven</text>
+  <rect x="848" y="602" width="95" height="24" rx="8" fill="#11998e" opacity="0.8"/>
+  <text x="895" y="618" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#fff" font-weight="bold">XML Config</text>
+</svg>
